@@ -414,13 +414,26 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #2196f3;
+  background-color: var(--white);
   border-radius: 50%;
   border: none;
+  fill: var(--gray);
+}
+
+.icon-social:hover {
+  background-color: var(--blue);
+  fill: var(--white);
 }
 .contact-links--item {
   display: flex;
   flex-direction: row;
   gap: 10px;
   align-items: center;
+}
+
+.social-icons--container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
 }
