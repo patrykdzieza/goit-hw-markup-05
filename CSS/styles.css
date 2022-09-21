@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
-@import url('node_modules/modern-normalize/modern-normalize.css');
 
 :root {
   --blue: #2196f3;
@@ -37,6 +36,7 @@ button {
   margin: 0;
   border: 0;
 }
+
 h1,
 h2,
 h3,
@@ -389,3 +389,38 @@ p {
 
 /*.section-1-col__item {
 }*/
+
+/* -- icons -- */
+
+.icon-features {
+  width: 270px;
+  height: 120px;
+  padding-bottom: 30px;
+}
+
+.icon-contact--mail {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-contact--phone {
+  width: 10px;
+  height: 16px;
+}
+
+.icon-social {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2196f3;
+  border-radius: 50%;
+  border: none;
+}
+.contact-links--item {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}

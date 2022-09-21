@@ -2,11 +2,13 @@
 <html lang="pl-PL">
   <head>
     <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
   </head>
+
   <body>
     <header class="header__container">
       <div class="container">
@@ -26,12 +28,22 @@
             </ul>
           </nav>
           <div class="contact-links">
-            <a class="navigation__link navigation__link--contact" href="tel:+48111111111"
-              >+48 111 111 111</a
-            >
-            <a class="navigation__link navigation__link--contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            <div class="contact-links--item">
+              <svg class="icon-contact--phone">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              <a class="navigation__link navigation__link--contact" href="tel:+48111111111"
+                >+48 111 111 111</a
+              >
+            </div>
+            <div class="contact-links--item">
+              <svg class="icon-contact--mail">
+                <use href="./images/icons.svg#icon-envelope"></use>
+              </svg>
+              <a class="navigation__link navigation__link--contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -51,6 +63,9 @@
         <div class="container">
           <ul class="section-4-col__content">
             <li class="section-4-col__item--no-shadow">
+              <svg class="icon-features">
+                <use href="./images/icons.svg#icon-feature1"></use>
+              </svg>
               <h3 class="section-4-col__title">Lorem ipsum</h3>
               <p class="section-4-col__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -58,6 +73,9 @@
               </p>
             </li>
             <li class="section-4-col__item--no-shadow">
+              <svg class="icon-features">
+                <use href="./images/icons.svg#icon-feature2"></use>
+              </svg>
               <h3 class="section-4-col__title">Lorem ipsum</h3>
               <p class="section-4-col__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -65,6 +83,9 @@
               </p>
             </li>
             <li class="section-4-col__item--no-shadow">
+              <svg class="icon-features">
+                <use href="./images/icons.svg#icon-feature3"></use>
+              </svg>
               <h3 class="section-4-col__title">Lorem ipsum</h3>
               <p class="section-4-col__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -72,6 +93,9 @@
               </p>
             </li>
             <li class="section-4-col__item--no-shadow">
+              <svg class="icon-features">
+                <use href="./images/icons.svg#icon-feature4"></use>
+              </svg>
               <h3 class="section-4-col__title">Lorem ipsum</h3>
               <p class="section-4-col__text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel arcu sem. Sed non
@@ -126,6 +150,11 @@
               />
               <h4 class="section-4-col__title--medium">John Doe</h4>
               <p class="section-4-col__text section-4-col__text--medium">Product Designer</p>
+              <div class="social-icons">
+                <svg class="icon-social">
+                  <use href="./images/icons.svg#icon-instagram" width="20px" height="20px"></use>
+                </svg>
+              </div>
             </li>
             <li class="section-4-col__item">
               <img src="images/img5.jpg" alt="kobieta w okularach" height="260" width="270" />
