@@ -149,10 +149,11 @@ p {
 .footer__item {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .footer__content {
   text-decoration: none;
-  padding-top: 20px;
+
   display: flex;
   flex-direction: row;
   gap: 70px;
@@ -169,7 +170,6 @@ p {
 
 .footer__text--contact {
   color: rgba(255, 255, 255, 0.6);
-  padding-top: 9px;
 }
 .footer__text--contact:hover {
   color: var(--blue);
@@ -177,7 +177,7 @@ p {
 .footer-column {
   display: flex;
   flex-direction: column;
-  flex-basis: 20px;
+  gap: 9px;
 }
 /* BUTTONS */
 
@@ -192,7 +192,7 @@ p {
   font-size: 16px;
   line-height: 1.87;
   color: var(--white);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
   border-radius: 4px;
   text-align: center;
 }
@@ -226,15 +226,19 @@ p {
 
 /* -- INDEX.HTML STYLES -- */
 
-/*.hero__container {
-}*/
-
-.hero__container--background {
-  background-color: var(--dark-background);
+.hero__container {
+  z-index: 99;
   display: flex;
   justify-content: center;
 }
 
+.hero__container--background {
+  /* background-color: var(--dark-background); */
+}
+.header-img {
+  display: flex;
+  z-index: 0;
+}
 .hero__title {
   color: var(--white);
   font-size: 44px;
@@ -249,6 +253,8 @@ p {
   flex-basis: 616px;
   padding: 200px 455px 200px 455px;
   gap: 30px;
+  background-image: url('../images/header.png');
+  background-color: rgba(47, 48, 58, 0.4);
 }
 .section-4-col__container {
   display: flex;
@@ -470,6 +476,11 @@ p {
   gap: 20px;
 }
 
+.footer-social-links__content {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
 .icon-clients {
   border: 1px solid #afb1b8;
   border-radius: 4px;
