@@ -144,9 +144,16 @@ p {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__item {
+  display: flex;
+  flex-direction: column;
+}
 .footer__content {
   text-decoration: none;
   padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
 }
 
 .footer__text {
@@ -419,6 +426,9 @@ p {
   border: none;
   fill: var(--gray);
 }
+.icon-social--gray {
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 .icon-social:hover {
   background-color: var(--blue);
@@ -431,9 +441,21 @@ p {
   align-items: center;
 }
 
-.social-icons--container {
+.social-icons__container {
   display: flex;
   flex-direction: row;
   gap: 10px;
   justify-content: center;
+}
+
+.social-links--title {
+  font-weight: var(--bold);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.social-links__container {
 }
