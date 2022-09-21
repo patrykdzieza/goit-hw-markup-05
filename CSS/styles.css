@@ -4,6 +4,7 @@
   --blue: #2196f3;
   --gray: #757575;
   --black: #212121;
+  --icon-gray: #afb1b8;
   --lightgray: #f5f4fa;
   --background: #fff;
   --dark-background: #2f303a;
@@ -40,6 +41,7 @@ button {
 h1,
 h2,
 h3,
+h4,
 p {
   margin: 0;
   padding: 0;
@@ -305,6 +307,8 @@ p {
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: none;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 .section-4-col__text {
   color: var(--gray);
@@ -424,13 +428,14 @@ p {
   background-color: var(--white);
   border-radius: 50%;
   border: none;
-  fill: var(--gray);
+  fill: var(--icon-gray);
 }
 .icon-social--gray {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.icon-social:hover {
+.icon-social:hover,
+.icon-social:focus {
   background-color: var(--blue);
   fill: var(--white);
 }
@@ -446,9 +451,10 @@ p {
   flex-direction: row;
   gap: 10px;
   justify-content: center;
+  padding-top: 16px;
 }
 
-.social-links--title {
+.footer-social-links--title {
   font-weight: var(--bold);
   font-size: 14px;
   line-height: 1.14;
@@ -457,5 +463,21 @@ p {
   color: var(--white);
 }
 
-.social-links__container {
+.footer-social-links__container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icon-clients {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: var(--icon-gray);
+}
+
+.icon-clients:hover,
+.icon-clients:focus {
+  fill: var(--blue);
+  border: 1px solid var(--blue);
 }
