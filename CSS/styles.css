@@ -10,6 +10,7 @@
   --dark-background: #2f303a;
   --bold: 700;
   --white: #fff;
+  --overlay-background: rgba(33, 150, 243, 0.9);
 }
 
 body {
@@ -232,9 +233,6 @@ p {
   justify-content: center;
 }
 
-.hero__container--background {
-  /* background-color: var(--dark-background); */
-}
 .header-img {
   display: flex;
   z-index: 0;
@@ -503,4 +501,49 @@ p {
 .icon-clients:focus {
   fill: var(--blue);
   border: 1px solid var(--blue);
+}
+
+/* -- Overlay classes -- */
+
+.overlay {
+  
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-background);
+  transform: translatey(100%);
+  transition: transform 250ms ease;
+  display: flex;
+  align-items: center;
+}
+.overlay__text {
+  color: var(--white);
+  padding-left: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  flex-basis: 301px;
+  letter-spacing: 0.03em;
+}
+.figure-image-1 {
+  background-image: url('../images/portfolio-img-1.jpg');
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+
+.figure-image-2{
+  background-image: url('../images/portfolio-img-2.jpg');
+  width: 370px;
+  height: 294px;
+  overflow: hidden;
+}
+.section-3-col__content-box:hover .overlay {
+  transform: translatex(0);
+}
+
+.figure-img{
+  position: relative;
+  z-index: -1;
 }
