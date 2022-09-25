@@ -360,6 +360,8 @@ p {
 .section-3-col__content-box {
   margin: 0;
   padding: 0;
+  
+  
 }
 .section-3-col__content-box:hover,
 .section-3-col__content-box:focus {
@@ -387,7 +389,10 @@ p {
 .section-3-col__content-box__figcaption {
   padding: 20px 24px 20px 24px;
 }
-
+.section-3-col__content-box--overlay{
+  position: relative;
+  overflow: hidden;
+}
 .section-3-col__content-box__figcaption--border {
   border-bottom: 1px solid var(--lightgray);
   border-left: 1px solid var(--lightgray);
@@ -506,7 +511,7 @@ p {
 /* -- Overlay classes -- */
 
 .overlay {
-  
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -547,3 +552,4 @@ p {
   position: relative;
   z-index: -1;
 }
+
