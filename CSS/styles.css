@@ -76,6 +76,7 @@ p {
 }
 .navigation__item {
   display: inline-block;
+  position: relative;
 }
 .contact-links {
   margin-left: auto;
@@ -555,23 +556,36 @@ p {
 .text-box__overlay {
   position: absolute;
   bottom: 0px;
-  width:100%;
+  width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
 }
 
 .text-box__overlay {
   color: var(--white);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 .text-box__overlay__paragraph {
-  padding-bottom:27px;
-  padding-top:27px;
+  padding-bottom: 27px;
+  padding-top: 27px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.navigation__link__underline-active {
+  background-color: var(--blue);
+  position: absolute;
+}
+
+.navigation__link__underline-active::after {
+  content: '';
+  width: 53px;
+  height: 4px;
+  background-color: var(--blue);
+  position: absolute;
+  top: 27px;
 }
