@@ -140,6 +140,7 @@ p {
 .navigation__link:hover,
 .navigation__link:focus {
   color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .footer {
@@ -174,6 +175,7 @@ p {
 }
 .footer__text--contact:hover {
   color: var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .footer-column {
   display: flex;
@@ -220,6 +222,7 @@ p {
   background-color: var(--blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* -- BUTTONS STYLE END -- */
@@ -253,6 +256,10 @@ p {
   gap: 30px;
   background-image: url('../images/header.png');
   background-color: rgba(47, 48, 58, 0.4);
+}
+
+.section__filters {
+  padding-top: 94px;
 }
 .section-4-col__container {
   display: flex;
@@ -355,16 +362,16 @@ p {
 
 .section-3-col__item {
   list-style: none;
+  position: relative;
 }
 
 .section-3-col__content-box {
   margin: 0;
   padding: 0;
-  
-  
 }
 .section-3-col__content-box:hover,
 .section-3-col__content-box:focus {
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
   margin: 0;
   padding: 0;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -389,7 +396,7 @@ p {
 .section-3-col__content-box__figcaption {
   padding: 20px 24px 20px 24px;
 }
-.section-3-col__content-box--overlay{
+.section-3-col__content-box--overlay {
   position: relative;
   overflow: hidden;
 }
@@ -422,6 +429,7 @@ p {
 .contact-links--item:focus {
   fill: #2196f3;
   color: #2196f3;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .icon-features {
   width: 270px;
@@ -458,6 +466,7 @@ p {
 .icon-social:focus {
   background-color: var(--blue);
   fill: var(--white);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 .contact-links--item {
   display: flex;
@@ -506,6 +515,7 @@ p {
 .icon-clients:focus {
   fill: var(--blue);
   border: 1px solid var(--blue);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 /* -- Overlay classes -- */
@@ -531,25 +541,37 @@ p {
   flex-basis: 301px;
   letter-spacing: 0.03em;
 }
-.figure-image-1 {
-  background-image: url('../images/portfolio-img-1.jpg');
-  width: 370px;
-  height: 294px;
-  overflow: hidden;
-}
 
-.figure-image-2{
-  background-image: url('../images/portfolio-img-2.jpg');
-  width: 370px;
-  height: 294px;
-  overflow: hidden;
-}
 .section-3-col__content-box:hover .overlay {
   transform: translatex(0);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
-.figure-img{
+.figure__img {
   position: relative;
   z-index: -1;
 }
 
+.text-box__overlay {
+  position: absolute;
+  bottom: 0px;
+  width:100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.text-box__overlay {
+  color: var(--white);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.text-box__overlay__paragraph {
+  padding-bottom:27px;
+  padding-top:27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
