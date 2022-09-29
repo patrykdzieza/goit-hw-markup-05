@@ -604,13 +604,16 @@ p {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
+  transition: visibility, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .modal {
   position: relative;
   display: flex;
   margin: 0 auto;
-  flex-direction: row;
+
   margin-top: 221px;
   z-index: 1;
   background-color: var(--white);
@@ -618,12 +621,19 @@ p {
   width: 528px;
   border-radius: 4px;
   justify-content: flex-end;
+  transition: transform;
+  transform: scale(1);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .is-hidden {
   pointer-events: none;
   visibility: none;
   opacity: 0;
+}
+.is-hidden .modal {
+  transform: scale(0);
 }
 
 .modal__close-button {
@@ -637,6 +647,7 @@ p {
   align-items: center;
   justify-content: center;
   fill: #000;
+  cursor: pointer;
 }
 
 .modal__close-button__icon {
