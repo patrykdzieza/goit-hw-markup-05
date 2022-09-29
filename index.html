@@ -20,7 +20,7 @@
                 <a class="navigation__link" href="index.html">Agencja</a>
                 <div class="navigation__link__underline-active"></div>
               </li>
-              
+
               <li class="navigation__item">
                 <a class="navigation__link" href="portfolio.html">Portfolio</a>
               </li>
@@ -54,9 +54,8 @@
     <main>
       <section class="hero__container hero__container--background">
         <div class="hero__content">
-          
           <h1 class="hero__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="button__primary button__primary--bold-text" type="button">
+          <button class="button__primary button__primary--bold-text" type="button" data-modal-open>
             Zamów usługę
           </button>
         </div>
@@ -114,14 +113,14 @@
           <h2 class="section-3-col__title">Czym się zajmujemy?</h2>
           <ul class="section-3-col__content">
             <li class="section-3-col__item">
-              <img class="figure__img"
+              <img
                 src="images/img1.jpg"
                 alt="klawiatura oraz tablet na biurku"
                 height="294"
                 width="370"
               />
-              <div class="text-box__overlay">
-                <p class="text-box__overlay__paragraph">APLIKACJE KOMPUTEROWE</p>
+              <div class="text-box text-box--overlay">
+                <p class="text-box__paragraph">APLIKACJE KOMPUTEROWE</p>
               </div>
             </li>
             <li class="section-3-col__item">
@@ -131,8 +130,8 @@
                 height="294"
                 width="370"
               />
-              <div class="text-box__overlay">
-                <p class="text-box__overlay__paragraph">APLIKACJE MOBILNE</p>
+              <div class="text-box text-box--overlay">
+                <p class="text-box__paragraph">APLIKACJE MOBILNE</p>
               </div>
             </li>
             <li class="section-3-col__item">
@@ -142,8 +141,8 @@
                 height="294"
                 width="370"
               />
-              <div class="text-box__overlay">
-                <p class="text-box__overlay__paragraph">ROZWIĄZANIA GRAFICZNE</p>
+              <div class="text-box text-box--overlay">
+                <p class="text-box__paragraph">ROZWIĄZANIA GRAFICZNE</p>
               </div>
             </li>
           </ul>
@@ -322,14 +321,13 @@
             <a class="logo--light" href="index.html"><span class="logo-accent">Web</span>Studio</a>
             <address class="footer-column">
               <p class="footer__text">m. Warszawa, Aleje Jerozolimskie 21</p>
-              
-                <a class="footer__text footer__text--contact" href="tel:+48111111111">
-                  +48 111 111 111</a
-                >
-                <a class="footer__text footer__text--contact" href="mailto:info@devstudio.com">
-                  info@devstudio.com</a
-                >
-           
+
+              <a class="footer__text footer__text--contact" href="tel:+48111111111">
+                +48 111 111 111</a
+              >
+              <a class="footer__text footer__text--contact" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
             </address>
           </div>
           <div class="footer-social-links__container">
@@ -360,5 +358,19 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal__close-button" data-modal-close>
+          
+          <svg width="11px" height="11px"> 
+            <use href="./images/icons.svg#icon-close"
+            </use>
+          </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
